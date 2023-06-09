@@ -1,7 +1,10 @@
 class Coche:
-    def __init__(self, marca, modelo, matricula, motor):
+
+    def __init__(self, marca: str, modelo: str, matricula: str ) -> None:
         self.marca = marca
         self.modelo = modelo
         self.matricula = matricula
-        self.motor = motor
+
+    def __str__(self) -> str:
+        return f"{self.marca} - {self.modelo} [{self.matricula}]"
         
